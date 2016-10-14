@@ -89,10 +89,11 @@ function isTyler(name) {
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-function newMyName() {
-  var newMyName = myName();
-  alert (newMyName());
+var newMyName = function() {
+  var name = myName();
+  alert(newMyName);
 }
+
 
 //Now alert the result of invoking newMyName
 
@@ -112,10 +113,7 @@ function newMyName() {
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-  function innerFn() {
     var innerFn = outerFn();
-    return innerFn;
-  }
 
 //Now invoke innerFn.
 innerFn();
