@@ -6,6 +6,13 @@ var name = 'Tyler';
 
   //Code Here
 
+function isTyler(name) {
+  if (name === 'Tyler') {
+    return true;
+  }
+  return false;
+}
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -13,6 +20,14 @@ var name = 'Tyler';
 
 
   //Code Here
+  function getName(){
+    var name = prompt("What is your name");
+    return name;
+  }
+
+
+
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -23,7 +38,10 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+  function welcome() {
+    var name1 = getName();
+    alert ("Welcome, " + name1);
+  }
 
 //////////////////PROBLEM 4////////////////////
 
@@ -33,6 +51,7 @@ var name = 'Tyler';
 //What is the difference between arguments and parameters?
 
   //Answer Here
+  // Parameters is what the function needs to pass in, but arguments are the actual values of the parameters you pass in. So if the function had the parameter of num, the argument would be the actual number you pass in (e.g., 3)
 
 
 //////////////////PROBLEM 5////////////////////
@@ -43,6 +62,14 @@ var name = 'Tyler';
 
 
   //Answer Here
+  //undefined
+  //" " empty string
+  //false
+  //0
+  //null
+  //NaN - Not a number
+
+
 
 
 
@@ -53,16 +80,21 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
+  function myName() {
+    return "Alexis";
+  }
+
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+function newMyName() {
+  var newMyName = myName();
+  alert (newMyName());
+}
 
 //Now alert the result of invoking newMyName
-
-
 
 //////////////////PROBLEM 7////////////////////
 
